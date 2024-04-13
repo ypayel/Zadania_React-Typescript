@@ -4,6 +4,7 @@ import './typescript.ts'
 import Welcome from './components/Welcome/index.tsx';
 import { Counter } from './components/Counter/index.tsx';
 import ToggleButton from './components/ToggleButton/index.tsx';
+import ColoredBox from './components/ColoredBox/index.tsx';
 
 function App() {
 
@@ -151,7 +152,7 @@ const handleUser = (User) => {
         <Welcome  welcomeText="Witam na stronie"/>
         <Counter />
         <ToggleButton />
-
+        <ColoredBox />
 
        
       </div>

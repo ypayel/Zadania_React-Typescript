@@ -1,24 +1,24 @@
 import React from "react";
-import { ChangeEvent, useState } from "react";
+import { useState } from "react";
+
+// Toggle Button: Zbuduj komponent ToggleButton,
+//  który zmienia swój stan (włączony/wyłączony) za każdym kliknięciem w przycisk.
+//   Stan komponentu powinien przechowywać informację,
+//    czy przycisk jest aktualnie włączony.
 
 
 export const ToggleButton = () => {
-    const [buttonOn, setOn] = useState("");
-    const [buttonOF, setOf] = useState("");
+    const [handleVision, setVision] = useState(false)
 
-    const handlerOn = (event: ChangeEvent<HTMLButtonElement>) => {
-        setOn(event.target.value);
+   
+
+    const handlerOn = () => {
+        setVision(!handleVision);
     }
-
-    const handlerOf = (event: ChangeEvent<HTMLButtonElement>) => {
-        setOf(event.target.value);
-    }
-
 
     return (
         <div>
-            <button value={buttonOn} onChange={handlerOn}>Show</button>
-            <button value={buttonOF} onChange={handlerOf}>Hide</button>
+            <button onClick={handlerOn}>{handleVision ? `Hide` : `Show`}</button>
         </div>
     )
 }
