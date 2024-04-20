@@ -29,17 +29,7 @@ return (
     </div>
 )
 
-
 }
-
-
-
-
-
-    
-
-
-
 
 
 export default Counter;

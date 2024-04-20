@@ -1,4 +1,6 @@
+import React from "react";
 import { useState, FormEvent } from "react";
+
 type Props = {
   products: string[];
 };
