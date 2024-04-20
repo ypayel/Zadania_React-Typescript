@@ -1,0 +1,139 @@
+// ---- I sposób zagnieżdżeń po nazwie selektora
+// -- CSS
+// div {
+//   tutaj style
+// }
+// div > h1 {
+//   tutaj style
+// }
+// div > ul {
+//   tutaj style
+// }
+// div > ul > li {
+//   tutaj style
+// }
+// -- SCSS
+// div {
+//   h1 {
+//     tutaj style
+//   }
+//   ul {
+//     li {
+//        tutaj style
+//     }
+//   }
+// }
+
+// ---- II sposób po nazwie klasy
+
+// -- CSS
+
+// .App {
+//   tutaj style
+// }
+// .App > .block {
+//   tutaj style
+// }
+// .App > .block > .block-element {
+//   tutaj style
+// }
+// .App > .block > .block-list {
+//   tutaj style
+// }
+// .App > .block > .block-list > .block-list-item {
+//   tutaj style
+// }
+
+// -- SCSS
+
+// .App {
+//    .block {
+//      .block-element {
+//        tutaj style
+//     }
+//     .block-list {
+//       .block-list-item {
+//          tutaj style
+//       }
+//     }
+//   }
+// }
+
+// -- SCSS z dodatkiem "&"
+
+// .App {
+//   .block {
+//     // & > powoduje nam doklejenie nazwy rodzica ".block" + "-element"
+//     &-element {
+//     }
+//     //  ".block" + "-list"
+//     &-list {
+//       //  ".block" + "-list" + "-item"
+//       &-item {
+//         //  tutaj style
+//       }
+//     }
+//     #block-input {
+//       &-name {
+
+//       }
+//       &-age {
+
+//       }
+//     }
+//   }
+// }
+
+
+
+// $promary-color: #999;
+// %change-color {
+//     color: bisque;
+//     border: 1px solid #566;
+// }
+
+
+// .list {
+// &-block {
+//     text-align: center;
+//     text-decoration:overline;
+//     @extend %change-color;
+// }
+
+// &-child{
+//                 font-size: 100px;
+//                 color: $promary-color;
+//             }
+
+//     }
+
+//  // jak chce skorzystac z &- to musze dac najperw glowne classe, a pozniej wszystkich dzieci przez &-
+
+
+
+
+
+
+//  // zagniezdzenie 
+
+// .header {
+//     &__navigation {
+//         background-color: greenyellow;
+//     }
+
+//         &__list {
+//             list-style: none;
+//             text-align: right;
+
+//             &-item {
+//                 color: $promary-color;
+                
+            
+
+//             &--active{
+//                 font-size: 30px;
+//                 } 
+//             }
+            
+//         }
+// }
