@@ -1,4 +1,5 @@
 // nadpisanie nazwy importowanej wartosci za pomocą słówka kluczowego "as"
+import React from "react";
 import { Post as PostType } from "../PostList/PostList";
 
 type Props = Omit<PostType, "id">;

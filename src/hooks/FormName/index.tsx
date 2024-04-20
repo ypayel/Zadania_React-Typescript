@@ -1,5 +1,9 @@
 import React, { ChangeEvent, useState } from "react";
 
+// Utwórz formularz, który będzie przechowywał imię i nazwisko użytkownika za pomocą hooka useState.
+//  Wyświetl wprowadzone dane pod formularzem.
+
+
 
 type FormType = {
     firstName: string;

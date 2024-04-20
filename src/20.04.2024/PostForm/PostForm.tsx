@@ -1,5 +1,6 @@
 import { ChangeEvent, FormEvent, useState } from "react";
 import { Post } from "../PostList/PostList";
+import React from "react";
 
 type PostFormType = Omit<Post, "id">;
 

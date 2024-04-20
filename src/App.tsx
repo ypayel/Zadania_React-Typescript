@@ -3,9 +3,12 @@ import './App.scss';
 import './typescript.ts'
 import { Post, PostList } from "./20.04.2024/PostList/PostList.tsx";
 import { PostForm } from "./20.04.2024/PostForm/PostForm.tsx";
-import FormName from './components/FormName/index.tsx';
-import Counter from './components/Counter/index.tsx';
-import ColoredBox from './components/ColoredBox/index.tsx';
+import FormName from './hooks/FormName/index.tsx';
+import Counter from './hooks/Counter/index.tsx';
+import ColoredBox from './hooks/ColoredBox/index.tsx';
+import { Timer } from './hooks/Timer/index.tsx';
+import { EffectList } from './hooks/EffectList/index.tsx';
+import { Modal } from './hooks/Modal/index.tsx';
 
 
 
@@ -49,6 +52,10 @@ const App = () => {
       <Counter />
       <ColoredBox />
       <FormName />
+      <EffectList />
+      <Modal />
+      <Timer />
+
       </div>
     );
 }
