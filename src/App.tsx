@@ -1,14 +1,15 @@
-import React, { useEffect, useState } from 'react';
+import React, {ChangeEvent, useEffect, useState } from 'react';
 import './App.scss';
 import './typescript.ts'
-import { Post, PostList } from "./20.04.2024/PostList/PostList.tsx";
-import { PostForm } from "./20.04.2024/PostForm/PostForm.tsx";
-import FormName from './hooks/FormName/index.tsx';
-import Counter from './hooks/Counter/index.tsx';
-import ColoredBox from './hooks/ColoredBox/index.tsx';
-import { Timer } from './hooks/Timer/index.tsx';
-import { EffectList } from './hooks/EffectList/index.tsx';
-import { Modal } from './hooks/Modal/index.tsx';
+import { Post} from "./20.04.2024/PostList/PostList.tsx";
+import { FilteredList } from './hooks/useMemo/index.tsx';
+import { ListElement } from './21.04.2024/ListElement/index.tsx';
+import Profile from './Cwiecenia_react/Profile/index.tsx';
+import Search from './Cwiecenia_react/Search/index.tsx';
+import { ProfileForm } from './07.04.2024/ProfileForm/index.tsx';
+import UserForm from './06.04.2024/UserForm/index.tsx';
+import { LoginForm } from './07.04.2024/LoginForm/index.tsx';
+import { Form } from './Cwiecenia_react/Form/index.tsx';
 
 
 
@@ -47,15 +48,20 @@ const App = () => {
  
    return (
       <div className="App">
-      <PostList list={postList} />
+      {/* <PostList list={postList} />
       <PostForm addPost={addPost} />
       <Counter />
       <ColoredBox />
       <FormName />
       <EffectList />
       <Modal />
-      <Timer />
-
+      <Timer /> */}
+      {/* <FilteredList />
+      <ListElement /> */}
+      {/* <Profile />
+      <Search />
+      <ProfileForm /> */}
+      <Form />
       </div>
     );
 }
