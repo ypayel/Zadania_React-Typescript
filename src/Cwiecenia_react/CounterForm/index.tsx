@@ -46,8 +46,12 @@ export const CounterForm = () => {
         <button value={count} onClick={addCount}>Add</button>
         <button value={count} onClick={minusCount}>Minus</button>
         <form onSubmit={submitHandle}>
+            <label>
             <input type="text" value={name} onChange={nameHandle}/>
+            </label>
+            <label htmlFor="">
             <input type="text" value={phone} onChange={phoneHandle}/>
+            </label>
             <button type="submit">Submit</button>
         </form>
         </>
