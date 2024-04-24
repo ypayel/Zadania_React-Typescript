@@ -5,9 +5,14 @@
 ## Built with 
 
 • React.js
+
 • HTML
+
 • CSS
+
 • SCSS
+
+• TypeScript
 
 ## Author
 
