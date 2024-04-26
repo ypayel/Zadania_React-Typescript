@@ -11,6 +11,8 @@ import UserForm from './06.04.2024/UserForm/index.tsx';
 import { LoginForm } from './07.04.2024/LoginForm/index.tsx';
 import { Form } from './Cwiecenia_react/Form/index.tsx';
 import { CounterForm } from './Cwiecenia_react/CounterForm/index.tsx';
+import { Button } from './Cwiecenia_react/Button/index.tsx';
+import { InputField } from './Cwiecenia_react/InputField/index.tsx';
 
 
 
@@ -63,7 +65,9 @@ const App = () => {
       <Search />
       <ProfileForm /> */}
       {/* <Form /> */}
-      <CounterForm />
+      {/* <CounterForm />
+      <Button /> */}
+      <InputField />
       </div>
     );
 }

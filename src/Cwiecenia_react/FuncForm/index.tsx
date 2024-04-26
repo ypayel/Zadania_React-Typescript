@@ -17,12 +17,11 @@ export const FuncForm = () => {
 
     }
 
-    const handShoe =(e: ChangeEvent<HTMLInputElement>) => {
+    const handShoe =(e) => {
         setShoe(e.target.value);
         e.preventDefault();
         console.log(shoeNumber);
     }
-
     const handleSubmit = (e) => {
         e.preventDefault();
         alert(`Imie: ${name} zostalo zmienione oraz Nazwisko: ${shoeNumber}`)
