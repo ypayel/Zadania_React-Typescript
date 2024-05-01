@@ -12,3 +12,4 @@ export const Post = ({ title, body }: Props) => {
     </li>
   );
 };
+

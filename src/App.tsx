@@ -14,6 +14,9 @@ import { CounterForm } from './Cwiecenia_react/CounterForm/index.tsx';
 import { Button } from './Cwiecenia_react/Button/index.tsx';
 import { InputField } from './Cwiecenia_react/InputField/index.tsx';
 import { TodoList } from './Cwiecenia_react/TodoList/index.tsx';
+import { List } from './07.04.2024/List/index.tsx';
+import { Toggle } from './Cwiecenia_react/Toggle/index.tsx';
+import { ListCw } from './Cwiecenia_react/ListCw/index.tsx';
 
 
 
@@ -49,7 +52,6 @@ const App = () => {
     fetchPost();
   }, []);
 
- 
    return (
       <div className="App">
       {/* <PostList list={postList} />
@@ -65,11 +67,14 @@ const App = () => {
       {/* <Profile />
       <Search />
       <ProfileForm /> */}
-      <Form />
+      {/* <Form /> */}
       {/* <CounterForm />
       <Button /> */}
-      {/* <InputField /> */}
-      <TodoList/>
+      {/* <InputField /> */} 
+      {/* <TodoList/> */}
+      {/* <List products={[]}/> */}
+      <Toggle/>
+      
       </div>
     );
 }

@@ -1,5 +1,14 @@
 import React, { ChangeEvent, useState } from "react"
 
+// Utwórz komponent React o nazwie "TodoList",
+//  który renderuje listę zadań do wykonania.
+//   Komponent powinien mieć możliwość dodawania
+//    nowych zadań poprzez wpisanie tekstu w pole tekstowe
+//     i kliknięcie przycisku "Dodaj".
+//      Dodane zadania powinny być wyświetlane na liście.
+
+
+
 export const TodoList = () => {
     const [text, setText] = useState<string>('');
     const [tasks, setTasks] = useState<string[]>([]);

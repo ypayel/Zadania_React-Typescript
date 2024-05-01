@@ -1,7 +1,8 @@
 import React from "react";
-import { Post } from "../Post/Post.tsx";
+import { Post } from "../Post/Post";
 
-export type Post = {
+
+ type Post = {
   id: number;
   title: string;
   body: string;
@@ -27,3 +28,5 @@ export const PostList = ({ list }: Props) => {
     </>
   );
 };
+export { Post };
+
