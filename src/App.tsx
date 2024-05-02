@@ -17,6 +17,8 @@ import { TodoList } from './Cwiecenia_react/TodoList/index.tsx';
 import { List } from './07.04.2024/List/index.tsx';
 import { Toggle } from './Cwiecenia_react/Toggle/index.tsx';
 import { ListCw } from './Cwiecenia_react/ListCw/index.tsx';
+import { Timer } from './Cwiecenia_react/Timer/index.tsx';
+import { DropDown } from './Cwiecenia_react/DropDown/index.tsx';
 
 
 
@@ -73,8 +75,9 @@ const App = () => {
       {/* <InputField /> */} 
       {/* <TodoList/> */}
       {/* <List products={[]}/> */}
-      <Toggle/>
-      
+      {/* <Toggle/> */}
+      <Timer time={60}/>
+      <DropDown/>
       </div>
     );
 }
