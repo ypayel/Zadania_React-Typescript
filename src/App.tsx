@@ -21,6 +21,7 @@ import { Timer } from './Cwiecenia_react/Timer/index.tsx';
 import { DropDown } from './Cwiecenia_react/DropDown/index.tsx';
 import { Modal } from './Cwiecenia_react/Modal/index.tsx';
 import { LoginFormCw } from './Cwiecenia_react/LoginFormCw/index.tsx';
+import { RegistrationForm } from './Cwiecenia_react/RegistrationForm/index.tsx';
 
 
 
@@ -82,6 +83,7 @@ const App = () => {
       <DropDown/> */}
       <Modal/>
       <LoginFormCw/>
+      <RegistrationForm/>
       </div>
     );
 }

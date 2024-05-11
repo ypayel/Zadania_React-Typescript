@@ -6,7 +6,7 @@
 //      komponent powinien przetworzyć dane z formularza
 //       i wyświetlić alert z danymi użytkownika.
 
-import React, { ChangeEvent, FormEvent, useEffect, useState } from "react"
+import React, { ChangeEvent, FormEvent, useState } from "react"
 
 
 export const LoginFormCw = () => {
@@ -28,7 +28,7 @@ const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
 }
     return (
         <>
-        <form onClick={handleSubmit}>
+        <form onSubmit={handleSubmit}>
             <input type="text" value={password} onChange={handlePassword}/>
             <input type="text" value={last} onChange={handleLast}/>
             <button type="submit">Submit</button>
