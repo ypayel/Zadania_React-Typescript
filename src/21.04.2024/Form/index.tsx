@@ -2,12 +2,13 @@
 // Zastosuj hook useCallback do zdefiniowania funkcji obsługującej wysłanie formularza,
 // aby uniknąć ponownego tworzenia funkcji podczas ponownego renderowania komponentu.
 
-import React from "react";
+import React, { ChangeEvent } from "react";
 import { useForm } from "./useForm";
 
 export const Form = () => {
   const { text, setText, handleSubmit } = useForm();
 
+  
   return (
     <form onSubmit={(e) => handleSubmit(e)}>
       <input
