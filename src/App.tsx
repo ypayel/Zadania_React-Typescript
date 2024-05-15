@@ -2,6 +2,7 @@ import React, { useContext} from 'react';
 import './App.scss';
 import './typescript.ts'
 import { ListContext } from './Cwiecenia_react/ListContext/ListContext.tsx';
+import { ProductContext } from './Cwiecenia_react/ProductContext/productContext.tsx';
 
 
 
@@ -37,12 +38,11 @@ const App = () => {
 //     fetchPost();
 //   }, []);
 
-
-const {lists, addFav, removeList } = useContext(ListContext)
-
+// const {lists, addFav, removeList } = useContext(ListContext) (1)
+const {products, addProduct, deleteProduct} = useContext(ProductContext);
    return (
       <div className="App">
-         <h2>Lista receptow</h2>
+         {/* <h2>Lista receptow</h2>
       {lists.length > 0 ? (
         <ul>
           {lists.map(({ id, name, }) => (
@@ -62,7 +62,31 @@ const {lists, addFav, removeList } = useContext(ListContext)
         }
       >
         Dodaj nowy recept 
-      </button>
+      </button>  (1)*/}
+
+
+
+      {/* inne zadanie  (2)*/}
+        <h1>Lista productow</h1>
+        {products.length > 0 ? (
+          <ul>
+            {products.map(({ id, title, price}) => (
+              <li key={id}>
+                Nazwa: {title} - cena: {price}
+              </li>
+            ))}
+          </ul>
+        ) : null}
+        <button onClick={() => deleteProduct(3)}>Usun 3 element</button>
+        <button onClick={() => addProduct({
+          id: 11231321313,
+          title: "nowy produkt",
+          price: 10000,
+        })
+        }
+        >
+          Dodaj nowy product
+        </button>
       </div>
     );
 }
